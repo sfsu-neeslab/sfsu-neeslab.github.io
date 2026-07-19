@@ -20,7 +20,7 @@ class SiteHeader extends HTMLElement {
         <div class="container nav-shell">
           <a class="brand" href="/" aria-label="NEES Lab home">
             <img class="brand-logo" src="/images/nees-logo.png" alt="" aria-hidden="true">
-            <span><span class="brand-name">NEES LAB</span><span class="brand-full">NeuroEngineering &amp; Embedded Systems</span></span>
+            <span class="brand-wordmark"><span class="brand-name"><span class="brand-ne">NE</span><span class="brand-es">ES</span> LAB</span><span class="brand-full">NeuroEngineering and Embedded Systems Laboratory</span></span>
           </a>
           <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button>
           <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
