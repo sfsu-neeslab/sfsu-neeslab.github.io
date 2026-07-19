@@ -42,9 +42,7 @@ p { margin: 0 0 1rem; }
 .nav-shell { min-height: 86px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .brand { display: flex; align-items: center; gap: .8rem; color: var(--navy); text-decoration: none; }
 .brand:hover { color: var(--navy); }
-.brand-mark { width: 52px; height: 52px; flex: 0 0 auto; border-radius: 50%; position: relative; background: var(--navy); box-shadow: inset 0 0 0 3px rgba(59,192,195,.3); }
-.brand-mark::before, .brand-mark::after { content: ""; position: absolute; inset: 12px; border: 2px solid var(--cyan); border-radius: 50% 45% 55% 48%; transform: rotate(32deg); }
-.brand-mark::after { inset: 20px 9px; border-color: var(--gold); transform: rotate(-18deg); }
+.brand-logo { width: 62px; height: 62px; flex: 0 0 auto; object-fit: contain; }
 .brand-name { display: block; font-weight: 850; font-size: 1.3rem; letter-spacing: .04em; line-height: 1; }
 .brand-full { display: block; color: var(--ink-soft); font-size: .72rem; margin-top: .35rem; white-space: nowrap; }
 .site-nav { display: flex; align-items: center; gap: 1.55rem; }
@@ -174,7 +172,7 @@ p { margin: 0 0 1rem; }
   .institution-bar span:last-child { display: none; }
   .brand-full { display: none; }
   .nav-shell { min-height: 72px; }
-  .brand-mark { width: 44px; height: 44px; }
+  .brand-logo { width: 50px; height: 50px; }
   .card-grid, .news-grid, .alumni-grid, .footer-grid { grid-template-columns: 1fr; }
   .section-head { align-items: start; flex-direction: column; }
   .fact-strip { grid-template-columns: 1fr; }
