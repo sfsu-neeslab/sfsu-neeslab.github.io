@@ -55,15 +55,3 @@ class SiteFooter extends HTMLElement {
 
 customElements.define('site-header', SiteHeader);
 customElements.define('site-footer', SiteFooter);
-
-document.addEventListener('click', (event) => {
-  const filter = event.target.closest('[data-filter]');
-  if (!filter) return;
-  document.querySelectorAll('[data-filter]').forEach(button => button.classList.remove('active'));
-  filter.classList.add('active');
-  const selected = filter.dataset.filter;
-  document.querySelectorAll('[data-type]').forEach(item => {
-    const types = item.dataset.type.split(' ');
-    item.hidden = selected !== 'all' && !types.includes(selected);
-  });
-});
