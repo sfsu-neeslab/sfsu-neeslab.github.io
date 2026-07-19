@@ -63,6 +63,7 @@ document.addEventListener('click', (event) => {
   filter.classList.add('active');
   const selected = filter.dataset.filter;
   document.querySelectorAll('[data-type]').forEach(item => {
-    item.hidden = selected !== 'all' && item.dataset.type !== selected;
+    const types = item.dataset.type.split(' ');
+    item.hidden = selected !== 'all' && !types.includes(selected);
   });
 });
