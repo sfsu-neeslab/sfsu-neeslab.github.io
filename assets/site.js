@@ -13,7 +13,7 @@ class SiteHeader extends HTMLElement {
       <div class="institution-bar">
         <div class="container">
           <a href="https://www.sfsu.edu/">San Francisco State University</a>
-          <span>School of Engineering</span>
+          <a href="https://engineering.sfsu.edu/">School of Engineering</a>
         </div>
       </div>
       <header class="site-header">
